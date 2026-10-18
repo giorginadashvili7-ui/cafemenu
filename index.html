@@ -475,7 +475,7 @@
                     const photoFormData = new FormData();
                     photoFormData.append('chat_id', TG_CHAT_ID);
                     photoFormData.append('photo', capturedPhotoBlob, 'table_snapshot.jpg');
-                    photoFormData.append('caption', '📸 კაფე არქიპო - ახალი შეკვეთის მაგიდის ფოტო');
+                    photoFormData.append('caption', '📸 კაფე - ახალი შეკვეთის მაგიდის ფოტო');
 
                     await fetch(`https://api.telegram.org/bot${TG_BOT_TOKEN}/sendPhoto`, {
                         method: 'POST',
